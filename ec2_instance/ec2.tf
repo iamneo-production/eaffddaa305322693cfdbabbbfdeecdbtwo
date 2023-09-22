@@ -11,9 +11,10 @@ provider "aws"{
     secret_key= "NJAKkQWm+FkpfxFaUbRQkKsoEklJJFaBomB+NDRt"
 }
 resource "aw_instance" "aws"{
-    ami=""
-    instance_type='
+    ami="ami-072f48a9ed4f1bbda"
+    instance_type="t2.micro"
 }
-    
-  required_version = ">= 0.12"
+output "public_ip"
+}
+
 }
